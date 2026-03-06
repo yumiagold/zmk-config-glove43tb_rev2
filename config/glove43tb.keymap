@@ -97,6 +97,21 @@
 
             tap-ms = <20>;
         };
+
+        encoder_none: encoder_none {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&none>, <&none>;
+        };
+
+        lt_ctrl_encoder: lt_ctrl_encoder {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_CTRL_ENCODER";
+            bindings = <&mo>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+        };
     };
 
     keymap {
@@ -117,7 +132,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
 &trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LCTRL &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &lt_ctrl_encoder 7 LCTRL &trans  &trans  &trans  &trans  &kp F11
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
             >;
 
@@ -167,6 +182,16 @@
 &trans         &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3     &ind_con  &ind_bat      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans         &trans           &trans        &trans           &trans    &trans        &trans       &trans                                                  &bt BT_CLR_ALL
             >;
+        };
+        layer_7_ctrl_encoder_off {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
 };
