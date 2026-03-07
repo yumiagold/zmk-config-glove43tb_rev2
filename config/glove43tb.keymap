@@ -205,7 +205,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&encoder_none>;
+            sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
         };
     };
 };
