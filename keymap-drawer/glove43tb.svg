@@ -286,9 +286,7 @@ path.combo {
 </g>
 <g transform="translate(208, 225)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.9em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">F13</tspan>
-</text>
+<text x="0" y="0" class="key tap">F13</text>
 <a href="#x_x">
 <text x="0" y="24" class="key hold layer-activator">6</text>
 </a></g>
@@ -300,9 +298,7 @@ path.combo {
 </a></g>
 <g transform="translate(333, 247) rotate(20.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.9em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">F14</tspan>
-</text>
+<text x="0" y="0" class="key tap">F14</text>
 <a href="#ARROW">
 <text x="0" y="24" class="key hold layer-activator">ARROW</text>
 </a></g>
@@ -1538,8 +1534,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2372)" class="layer-7_ctrl_encoder_off">
-<text x="0" y="28" class="label" id="ctrl_encoder_off">7_ctrl_encoder_off:</text>
+<g transform="translate(30, 2372)" class="layer-7_ctrl_zoom">
+<text x="0" y="28" class="label" id="ctrl_zoom">7_ctrl_zoom:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 62)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
